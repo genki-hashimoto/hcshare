@@ -1,0 +1,20 @@
+{% load staticfiles %}
+
+
+<html>
+    <head>
+        <title>HCshare</title>
+				<link rel="stylesheet" href="{% static 'css/mixshare.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="">HC Share!!!</a></h1>
+        </div>
+
+        <div>
+					{% for post in posts %}
+					<iframe width="70%" height="120" src="https://www.mixcloud.com/widget/iframe/?feed={{post.url}}&hide_cover=1" frameborder="0"></iframe>
+					{% endfor %}
+        </div>
+    </body>
+</html>
