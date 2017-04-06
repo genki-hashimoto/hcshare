@@ -1,0 +1,19 @@
+{% load staticfiles %}
+
+
+<html>
+    <head>
+        <title>HCshare</title>
+				<link rel="stylesheet" href="{% static 'css/mixshare.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="">HC Share!!!</a></h1>
+        </div>
+
+        <div>
+          {% block content %}
+          {% endblock %}
+        </div>
+    </body>
+</html>
