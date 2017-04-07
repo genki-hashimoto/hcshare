@@ -25,6 +25,8 @@ def post_new(request):
         post.play = int(status[2])
         post.save()
         return redirect('post_list')
+      else:
+        form = PostForm()
   else:
     form = PostForm()
   return render(request, 'mixshare/post_new.html', {'form': form})
