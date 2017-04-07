@@ -1,3 +1,24 @@
 iframe {
 	padding: 20px
 }
+
+.nav {
+    padding: 0 20px;
+    margin: 0 auto 60px;
+    width: 760px;
+    font-size: 85%;
+    background: #555;
+}
+.nav li {
+    list-style: none;
+    float: left;
+}
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    display: block;
+}
+.nav li a:hover {
+    background: #666;
+}
